@@ -30,6 +30,8 @@ Update a Product:
 peer chaincode invoke -C mychannel -n productChaincode -c '{"Args":["UpdateProduct", "1", "Updated Product 1", "150"]}'
 Delete a Product:
 
+Delete a product:
+
 peer chaincode invoke -C mychannel -n productChaincode -c '{"Args":["DeleteProduct", "1"]}'
 
 Get All Products:
