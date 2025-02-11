@@ -1,0 +1,11 @@
+version: 1.0
+channel: mychannel
+organizations:
+  - name: Org1
+    mspid: Org1MSP
+    peers:
+      - name: peer0.org1.example.com
+        port: 7051
+orderers:
+  - name: orderer.example.com
+    port: 7050
