@@ -77,11 +77,6 @@ chain.sh list
 
 
 
-
-Exercise: Update the chaincode
-=========
-This is in continuation of the first exercise
-
 Part-1
 ------
 1. Install a new version of the chaincode by changing the version to 2.0
@@ -93,9 +88,6 @@ Part-2
 1. Upgrade the chaincode by executing upgrade-auto 
 2. List to check the version of upgraded chaincode
 
-
-Exercise: Launch Peers in Dev Mode & Test
-=========
 
 Part-1
 ------
