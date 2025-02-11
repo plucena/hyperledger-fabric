@@ -13,9 +13,27 @@ peer lifecycle chaincode package productChaincode.tar.gz --path ./ --lang node -
 
 # install package
 
+peer lifecycle chaincode install productChaincode.tar.gz 
 
 
+# Approve the chaincode definition
 
+peer lifecycle chaincode approveformyorg \
+    --channelID channel1 \
+    --name productChaincode \
+    --version 1.0 \
+    --sequence 1 \
+    --signature-policy "OR('SampleOrg.admin')"
+
+# Commit the Chaincode Definition
+
+peer lifecycle chaincode checkcommitreadiness \
+    --channelID channel1 \
+    --name productChaincode \
+    --version 1.0 \
+    --sequence 1
+
+    
 # interact with package
 
 Create a Product:
@@ -35,4 +53,4 @@ Delete a product:
 peer chaincode invoke -C mychannel -n productChaincode -c '{"Args":["DeleteProduct", "1"]}'
 
 Get All Products:
-peer chaincode query -C mychannel -n productChaincode -c '{"Args":["GetAllProducts"]}'
+peer chaincode query -C channel1 -n productChaincode -c '{"Args":["GetAllProducts"]}'
