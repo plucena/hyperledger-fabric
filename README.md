@@ -6,7 +6,7 @@ docker run -d --name ibp-microfab -p 8080:8080 -p 9443:9443 ibmcom/ibp-microfab
 
 docker ps
 
-docker exec -it <imageid>  /bin/bash
+docker exec -it imageid  /bin/bash
 
 ./microfab connect
 2025/02/11 16:49:57 Connecting to URL 'http://console.127-0-0-1.nip.io:8080'
