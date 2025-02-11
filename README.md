@@ -1,4 +1,4 @@
-# hyperledger-fabric
+# hyperledger-fabric Version: 2.4.6
 
 docker pull ibmcom/ibp-microfab
 
