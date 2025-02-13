@@ -1,6 +1,7 @@
 # Package
 
 go mod init example
+
 go mod tidy
 
 peer lifecycle chaincode package example.tar.gz --path . --lang golang --label example_1.0
