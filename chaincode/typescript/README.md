@@ -18,12 +18,7 @@ peer lifecycle chaincode install productChaincode.tar.gz
 
 # Approve the chaincode definition
 
-peer lifecycle chaincode approveformyorg \
-    --channelID channel1 \
-    --name productChaincode \
-    --version 1.0 \
-    --sequence 1 \
-    --signature-policy "OR('SampleOrg.admin')"
+peer lifecycle chaincode approveformyorg  --channelID channel1 --name productChaincode --version 1.0 --sequence 1 --signature-policy "OR('SampleOrg.admin')"
 
 # Commit the Chaincode Definition
 
