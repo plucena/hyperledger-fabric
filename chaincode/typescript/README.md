@@ -27,13 +27,13 @@ peer lifecycle chaincode approveformyorg \
 
 # Commit the Chaincode Definition
 
-peer lifecycle chaincode checkcommitreadiness \
-    --channelID channel1 \
-    --name productChaincode \
-    --version 1.0 \
-    --sequence 1
-
-    
+peer lifecycle chaincode commit \
+  --channelID channel1 \
+  --name productChaincode \
+  --version 1.0 \
+  --sequence 1 \
+  --signature-policy "OR('SampleOrg.admin')"
+  
 # interact with package
 
 Create a Product:
