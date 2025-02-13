@@ -1,4 +1,6 @@
-# hyperledger-fabric Version: 2.4.6
+# hyperledger-fabric Version: 2.4.6 - Linux
+
+ # optional  check repo local machine ./microfab connect --force to regerate material, update git
 
 docker pull ibmcom/ibp-microfab
 
