@@ -22,12 +22,7 @@ peer lifecycle chaincode approveformyorg  --channelID channel1 --name productCha
 
 # Commit the Chaincode Definition
 
-peer lifecycle chaincode commit \
-  --channelID channel1 \
-  --name productChaincode \
-  --version 1.0 \
-  --sequence 1 \
-  --signature-policy "OR('SampleOrg.admin')"
+peer lifecycle chaincode commit --channelID channel1 --name productChaincode  --version 1.0  --sequence 1 --signature-policy "OR('SampleOrg.admin')"
   
 # interact with package
 
