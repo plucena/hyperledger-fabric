@@ -1,14 +1,6 @@
 # hyperledger-fabric Version: 2.4.6 - Linux
 
-install default fabric peers and docker images
-
-curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
-
-
-
-# Alternative install microfab
-
-# optional  check repo local machine ./microfab connect --force to regerate material, update git
+ # optional  check repo local machine ./microfab connect --force to regerate material, update git
 
 docker pull ibmcom/ibp-microfab
 
